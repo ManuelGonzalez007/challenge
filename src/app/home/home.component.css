@@ -1,0 +1,223 @@
+.H-div-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1%;
+  width: 80%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 11px;
+  color: white;
+  background-color: #dc51b1;
+}
+
+.H-button-dudas {
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 35px;
+  width: 120px;
+  background-color: #dc51b1;
+  color: white;
+}
+
+.H-div-encabezado {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: start;
+  background-color: #dc51b1;
+}
+
+.H-img-elipse {
+  margin-bottom: 2%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.H-img-mujer {
+  align-self: end;
+
+  margin-left: 10%;
+}
+
+.H-div-ginecologia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-top: 3%;
+  margin-left: 12%;
+  color: #474f58;
+}
+
+.H-button-consulta {
+  margin-left: 10%;
+  background-color: #b700db;
+  height: 35px;
+  width: 250px;
+  color: white;
+}
+
+h4 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.H-hr-med {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.H-div-medicamentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  background-color: #f8f8f8;
+}
+
+h5 {
+  font-size: 20px;
+  margin-right: 35%;
+}
+
+table,
+tr {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 30px;
+}
+
+th {
+  font-weight: normal;
+}
+
+span {
+  color: grey;
+}
+
+.H-div-preguntas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+}
+
+.H-div-preguntas-interno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  font-size: 30px;
+}
+
+h6 {
+  margin-left: 30%;
+}
+
+.H-img-abajo {
+  margin-left: 30%;
+}
+
+.H-img-abajo1 {
+  margin-left: 21%;
+}
+
+.H-img-abajo2 {
+  margin-left: 22%;
+}
+
+.H-img-abajo3 {
+  margin-left: 16.2%;
+}
+
+.H-img-abajo4 {
+  margin-left: 17.3%;
+}
+
+.H-img-abajo5 {
+  margin-left: 12.5%;
+}
+
+.H-img-abajo6 {
+  margin-left: 24%;
+}
+
+.H-img-abajo7 {
+  margin-left: 1.5%;
+}
+
+.H-img-abajo8 {
+  margin-left: 23.5%;
+}
+
+.H-img-abajo9 {
+  margin-left: 21.5%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 11px;
+  color: white;
+  background-color: #727d89;
+}
+
+.H-div-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1%;
+  width: 80%;
+}
+
+.H-img-logo {
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.H-div-derechos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #727d89;
+}
+
+.H-p-derec {
+  margin-right: 50%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.H-p-habl {
+  margin-left: 70%;
+  margin-top: 3%;
+  font-size: 15px;
+}
+
+.H-img-choiz-foo {
+  margin-right: 14%;
+  margin-top: 3%;
+}
