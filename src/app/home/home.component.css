@@ -1,3 +1,7 @@
+.H-div-cont {
+  font-family: "Roboto", sans-serif;
+}
+
 .H-div-nav {
   display: flex;
   flex-direction: row;
@@ -64,6 +68,7 @@ h1 {
   background-color: #b700db;
   height: 35px;
   width: 250px;
+  cursor: pointer;
   color: white;
 }
 
@@ -90,6 +95,10 @@ h5 {
   margin-right: 35%;
 }
 
+table {
+  overflow-x: auto;
+}
+
 table,
 tr {
   border: 1px solid black;
@@ -114,7 +123,8 @@ span {
 .H-div-preguntas {
   display: flex;
   flex-direction: column;
-  margin-top: 20%;
+  margin-top: 10%;
+  margin-bottom: 20%;
 }
 
 .H-div-preguntas-interno {
@@ -220,4 +230,51 @@ footer {
 .H-img-choiz-foo {
   margin-right: 14%;
   margin-top: 3%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 769px) {
+  .H-img-mujer {
+    display: none;
+  }
+  .H-img-elipse {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .H-div-nav {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .H-h1 {
+    margin-left: 20%;
+  }
+
+  .H-div-ginecologia {
+    margin-left: 3%;
+  }
+
+  .H-button-consulta {
+    margin-left: 5%;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  .H-div-medicamentos {
+    display: block;
+    margin: auto;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .H-div-derechos {
+    display: none;
+  }
 }

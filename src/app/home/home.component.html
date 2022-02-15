@@ -1,4 +1,4 @@
-<div>
+<div class="H-div-cont" name="cont">
   <nav>
     <div class="H-div-nav" name="nav">
       <img src="../../assets/choiz.png" alt="" />
@@ -13,7 +13,7 @@
   <div class="H-div-encabezado" name="encabezado">
     <img class="H-img-elipse" name="elipse" src="../../assets/elipse.png" />
 
-    <h1>
+    <h1 class="H-h1">
       Cuidarte siempre te<br />
       cuesta menos con Choiz
     </h1>
@@ -25,7 +25,7 @@
       país están a tu disposición para conversar<br />
       sin que tengas que salir de tu casa.
     </h3>
-    <button class="H-button-consulta" name="consulta">
+    <button routerLink="modal" class="H-button-consulta" name="consulta">
       Agendar una consulta
     </button>
   </div>
@@ -40,30 +40,10 @@
         <th>Laboratorio</th>
         <th>Precio <span>(sin cobertura médica)</span></th>
       </tr>
-      <tr>
-        <td>ALELI</td>
-        <td>Bernabo</td>
-        <td>$ XXX,xx</td>
-      </tr>
-      <tr>
-        <td>AMAPOLI</td>
-        <td>Bernabo</td>
-        <td>$ XXX,xx</td>
-      </tr>
-      <tr>
-        <td>APRIL 28</td>
-        <td>Gador</td>
-        <td>$ XXX,xx</td>
-      </tr>
-      <tr>
-        <td>CERAZETTE</td>
-        <td>Bernabo</td>
-        <td>$ XXX,xx</td>
-      </tr>
-      <tr>
-        <td>ALELI</td>
-        <td>Bernabo</td>
-        <td>$ XXX,xx</td>
+      <tr *ngFor="let med of meds">
+        <td>{{ med.brand | uppercase }}</td>
+        <td>{{ med.laboratory }}</td>
+        <td>$ {{ med.price }}</td>
       </tr>
     </table>
     <br />
@@ -76,15 +56,10 @@
         <th>Laboratorio</th>
         <th>Precio <span>(sin cobertura médica)</span></th>
       </tr>
-      <tr>
-        <td>NUEVARING</td>
-        <td>MSD Argentina</td>
-        <td>$ XXX,xx</td>
-      </tr>
-      <tr>
-        <td>AMAPOLI</td>
-        <td>Elea Phoenix</td>
-        <td>$ XXX,xx</td>
+      <tr *ngFor="let ring of rings">
+        <td>{{ ring.brand | uppercase }}</td>
+        <td>{{ ring.laboratory }}</td>
+        <td>$ {{ ring.price }}</td>
       </tr>
     </table>
     <table>
@@ -96,10 +71,10 @@
         <th>Laboratorio</th>
         <th>Precio <span>(sin cobertura médica)</span></th>
       </tr>
-      <tr>
-        <td>NUEVARING</td>
-        <td>MSD Argentina</td>
-        <td>$ XXX,xx</td>
+      <tr *ngFor="let patche of patches">
+        <td>{{ patche.brand | uppercase }}</td>
+        <td>{{ patche.laboratory }}</td>
+        <td>$ {{ patche.price }}</td>
       </tr>
     </table>
   </div>
