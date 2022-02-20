@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Medicamentos } from 'Models/Medicamentos';
+import { Preguntas } from 'Models/Preguntas';
 import { HomeService } from 'Servicio/home.service';
 
 @Component({
@@ -12,10 +12,16 @@ export class HomeComponent implements OnInit {
   meds: Medicamentos[] = [];
   rings: Medicamentos[] = [];
   patches: Medicamentos[] = [];
+  todasRespuestas: Preguntas[] = [];
+  indicePreguntaSeleccionada: number = -1;
+  image: string = '';
+
   constructor(private service: HomeService) {}
 
   ngOnInit(): void {
     this.getMeds();
+    this.getRespuestas();
+    this.image = '../../assets/abajo.png';
   }
 
   getMeds() {
@@ -24,5 +30,21 @@ export class HomeComponent implements OnInit {
       this.rings = data.data.rings;
       this.patches = data.data.patches;
     });
+  }
+
+  getRespuestas() {
+    this.service.getRespuestas().subscribe((data) => {
+      this.todasRespuestas = data.data;
+    });
+  }
+
+  flechaTouch(index: number) {
+    if (this.indicePreguntaSeleccionada === index) {
+      this.indicePreguntaSeleccionada = -1;
+      this.image = '../../assets/abajo.png';
+    } else {
+      this.indicePreguntaSeleccionada = index;
+      this.image = '../../assets/arriba.png'
+    }
   }
 }

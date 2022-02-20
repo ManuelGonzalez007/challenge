@@ -78,99 +78,18 @@
       </tr>
     </table>
   </div>
-  <div class="H-div-preguntas" name="preguntas">
-    <h4>Preguntas frecuentes</h4>
+  <h4>Preguntas frecuentes</h4>
+  <div *ngFor="let res of todasRespuestas; let index = index">
     <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Qué es Choiz?</h6>
-      <img
-        class="H-img-abajo"
-        name="abajo"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Está disponible en mi ciudad?</h6>
-      <img
-        class="H-img-abajo1"
-        name="abajo1"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Cuál es el costo del servicio?</h6>
-      <img
-        class="H-img-abajo2"
-        name="abajo2"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Con qué coberturas médicas trabajan?</h6>
-      <img
-        class="H-img-abajo3"
-        name="abajo3"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Cómo se puede pagar la suscripción?</h6>
-      <img
-        class="H-img-abajo4"
-        name="abajo4"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Necesito receta para solicitar un tratamiento?</h6>
-      <img
-        class="H-img-abajo5"
-        name="abajo5"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Son una farmacia online?</h6>
-      <img
-        class="H-img-abajo6"
-        name="abajo6"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>
-        ¿Si no tengo cobertura médica, el servicio de Choiz me cuesta más?
-      </h6>
-      <img
-        class="H-img-abajo7"
-        name="abajo7"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Mi información es privada?</h6>
-      <img
-        class="H-img-abajo8"
-        name="abajo8"
-        src="../../assets/abajo.png"
-        alt=""
-      />
-    </div>
-    <div class="H-div-preguntas-interno" name="preguntas-interno">
-      <h6>¿Puedo cancelar mi suscripción?</h6>
-      <img
-        class="H-img-abajo9"
-        name="abajo9"
-        src="../../assets/abajo.png"
-        alt=""
-      />
+      <div class="H-div-titulo-descripcion" name="titulo-descripcion">
+        <h6>{{ res.title }}</h6>
+        <p class="descripcion" *ngIf="indicePreguntaSeleccionada === index">
+          {{ res.description }}
+        </p>
+      </div>
+      <div class="aa">
+        <img class="flecha" (click)="flechaTouch(index)" src={{image}} alt="" />
+      </div>
     </div>
   </div>
   <footer>
