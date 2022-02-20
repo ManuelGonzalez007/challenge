@@ -1,27 +1,23 @@
-# ChallengeAngular
+# Medical Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Aplicacion desarrollada con Angular.
 
-## Development server
+Simula un sitio de una organizacion medica, en la que se puede programar una consulta y ver las preguntas frrecuentes, cuyas respuestas se obtienen de un llamado a una falsa API. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Tecnologías utilizadas: Angular (HTML, CSS, JavaScript, TypeScript)
 
-## Code scaffolding
+Pueden verla funcionando en el siguiente link: PENDIENTE
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instrucciones para correrlo localmente
 
-## Build
+Instalar node: https://nodejs.org/en/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clonar el repositorio de GitHub: git clone https://github.com/ManuelGonzalez007/medicalWeb.git
 
-## Running unit tests
+Instalar dependencias: *npm install*
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Levantar app
 
-## Running end-to-end tests
+Levantar el servidor de Angular CLI: npm start
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+App disponible en: localhost: 4200
